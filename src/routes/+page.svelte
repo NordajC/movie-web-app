@@ -1,5 +1,14 @@
 <script>
     import Navbar from '../lib/components/Navbar.svelte';
+    // const apiKey = process.env.API_KEY;
+    // console.log(apiKey);
+    let fileContents = '';
+
+  fetch('api_key.txt')
+    .then(response => response.text())
+    .then(data => {
+      fileContents = data;
+    });
 </script>
 
 <main>

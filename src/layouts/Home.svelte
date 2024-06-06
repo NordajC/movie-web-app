@@ -1,4 +1,5 @@
 <script>
+  const apiKey = process.env.API_KEY;
   let searchQuery = '';
 
   function handleSearch() {
